@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+	height: auto;
+	color: black;
+	font: 13px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/* Below starts my custom CSS attributes */
+
+html {
+    height: 100%;
+    min-width: 980px;
+    min-height: 500px;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative;
+    min-height: 100%;
+    white-space: nowrap;
+}
+
+#header_nav {
+	height:100px;
+	min-width: 850px;
+}
+
+#header_nav ul li {
+	/*list-style: none;*/
+	display: inline-block;
+	float: right;
+	margin: 20px 8px;
+	text-decoration: none;
+	-webkit-user-select:none;
+  	-moz-user-select:none;
+  	-ms-user-select:none;
+  	user-select:none;
+}
+
+li#app_grid  {
+	background-image: url('https://ssl.gstatic.com/gb/images/v1_ed0f1f70.png');
+	background-position: -35px -69px;
+	position: relative;
+	height: 30px;
+	width: 40px;
+	top: -5px;
+	opacity: .50;
+}
+
+li#app_grid:hover {
+	opacity: 1;
+}
+
+#sign_in a{
+	font: bold 15px 'Helvetica Neue', 'Lucida Grande', sans-serif;
+	text-transform: uppercase;		
+	color: white;
+	background: #db5c5c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #db5c5c 0%, #d30000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db5c5c), color-stop(100%,#d30000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #db5c5c 0%,#d30000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #db5c5c 0%,#d30000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #db5c5c 0%,#d30000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #db5c5c 0%,#d30000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db5c5c', endColorstr='#d30000',GradientType=0 ); /* IE6-9 */
+	padding: 3px 8px;
+	border-radius: 2px;
+	text-decoration: none;
+	margin-right: 5px;
+	border: 1px solid #CC2900;
+	vertical-align: middle;
+}
+
+#sign_in a:active {
+	
+	background: #7f1313; /* Old browsers */
+	background: -moz-linear-gradient(top,  #7f1313 1%, #a34f4f 23%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#7f1313), color-stop(23%,#a34f4f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7f1313 1%,#a34f4f 23%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7f1313 1%,#a34f4f 23%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7f1313 1%,#a34f4f 23%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7f1313 1%,#a34f4f 23%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f1313', endColorstr='#a34f4f',GradientType=0 ); /* IE6-9 */
+}
+
+#gLogo {
+	clear: both;
+	display: block;
+	margin: auto;
+	width: 270px;
+	padding-top: 92px;
+}
+
+form {
+	min-height: 90px;
+}
+	
+form div#search_input_field {
+	clear: both;
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	width: 550px;
+	height: 26px;
+	border: 1px solid lightgray;
+}
+
+
+#search_input_field:active {
+	-moz-border:    inset 0 0 px skyblue;
+	-webkit-border: inset 0 0 8px skyblue;
+	box-shadow: inset 0 0 2px skyblue;
+}
+
+#search_input_field input, #search_input_field div#microphone_img {
+	position: relative;
+	display: inline-block;
+}
+
+
+input#googleSearch {
+	/*clear: both;*/
+	border: 0px none black;
+	float: left;
+	width: 95%;
+	height: 23px;
+	vertical-align: middle;
+	left: 5px;
+	top:2px;
+	padding: 0px;
+} 
+
+
+input#googleSearch:focus {
+	outline: 0;
+}
+
+
+div#microphone_img {
+	background-image: url('mic.gif');
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	height: 95%;
+	width: 5%;
+	background-repeat: no-repeat;
+	opacity: .5;
+	top: 2px;
+}
+
+div#microphone_img:hover {
+	opacity: 1;
+}
+#search_buttons
+{
+	display: block;
+	margin: auto;
+	text-align: center;
+	border-width: 1px;
+
+}
+
+.submit {	
+	position: relative;
+	display: inline-block;
+	margin: 7px;
+	border: 1px solid lightgray;
+	border-radius: 2px;
+	padding: 2px 8px;
+	background-color: transparent;
+	font: bold 11px/20px Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+	-webkit-user-select:none;
+  	-moz-user-select:none;
+  	-ms-user-select:none;
+  	user-select:none;
+}
+
+.submit:hover,input#googleSearch:hover {
+	border-color: #B8B8B8 ;
+  	-moz-box-shadow:    0px 1px 5px 0px #ccc;
+  	-webkit-box-shadow: 0px 1px 5px 0px #ccc;
+  	box-shadow:         0px 1px 5px 0px #ccc;
+}
+
+
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: #f2f2f2;
+	height: 40px;
+
+
+}
+
+#footer_nav1 ul {
+	position: relative;	
+	float: left;
+	margin: 10px;
+/*	bottom: 0;
+*/}
+
+#footer_nav1 ul li,#footer_nav2 ul li {
+	display: inline-block;
+	margin: 5px 10px 5px 0;
+	padding: 0 8px;
+}
+
+#footer_nav1 a, #footer_nav2 a {
+	color: #686868;
+}
+#footer_nav2 ul {
+	position: relative;	
+	float: right;
+	margin: 10px 10px 10px 0;
+/*	bottom: 0;*/
+	
+}
+
+
+
+
